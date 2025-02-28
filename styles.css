@@ -13,7 +13,7 @@
     font-size: 60px;
   }
   
-  .overview, .images, .tables, .state-diagrams, .revised-component {
+  .overview, .images, .tables, .state-diagrams, .revised-component, .reflection {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
