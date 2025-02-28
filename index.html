@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Components</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="App">
+      <h1 class="accessible-components">Accessible Components</h1>
+
+      <div class="overview">
+        <h2>Overview</h2>
+        <p>
+          For this assignment, I chose to examine checkboxes from three
+          different applications. The three sources I chose were Google
+          Calendar, Apple Mac Spotlight Search settings, and IntelliJ IDEA UI
+          settings. I wanted to examine the different ways that users could
+          interact with these components, and then think about revisions that I
+          felt could be made to improve the design and user accessibility.
+        </p>
+      </div>
+
+      <div class="images">
+        <h2>Google Calendar</h2>
+        <img src="images/gcal.png" alt="Google calendar states" />
+
+        <h2>Spotlight Search Settings</h2>
+        <img src="images/spotlight.png" alt="Spotlight search setting states" />
+
+        <h2>IntelliJ IDEA UI Settings</h2>
+        <img src="images/intellij.png" alt="IntelliJ IDEA UI settings" />
+
+        <p>
+          Each of these photos demonstrate applications with the same general
+          functionality, yet there are key differences in the ways in which
+          users can interact with them. I will highlight these below.
+        </p>
+      </div>
+
+      <div class="tables">
+        <h2>User Input / Application Output Comparisons</h2>
+        <h3>Inputs</h3>
+        <img src="images/inputs.png" alt="Inputs table" />
+
+        <h3>Outputs</h3>
+        <img src="images/outputs.png" alt="Outputs table" />
+
+        <p>
+          Interestingly, despite key differences in the inputs and outputs from
+          user interaction, the screen reader does essentially the same thing
+          for all of the different applications. It alerts the user of the
+          checkbox label as well as its status: checked or unchecked. The screen
+          reader only reads when the user actually clicks, however. I would like
+          to see expanded functionality where the screen reader reads based on
+          hover state as well so the user knows where they are at in the boxes.
+        </p>
+      </div>
+
+      <div class="state-diagrams">
+        <h2>State Diagrams</h2>
+        <p>
+          Based on the above observations, we can now create state diagrams that
+          represent the flow of user input and application output. I will be
+          focusing my diagrams around the Apple Spotlight Settings.
+        </p>
+
+        <h3>Mouse User</h3>
+        <img src="images/mouse-original.png" alt="mouse user diagram" />
+
+        <h3>Keyboard User</h3>
+        <img src="images/keyboard-original.png" alt="keyboard user diagram" />
+
+        <h3>Observations</h3>
+        <p>
+          With these state diagrams, there are some key changes I would like to
+          make. For example, I think a hover effect should be added for mouse
+          users. I also do not think it should matter where you click, the
+          checkbox should always be toggled. Lastly, for keyboard users,
+          pressing the space bar on an active box should toggle the checkbox.
+        </p>
+
+        <h3>Mouse User Revised</h3>
+        <img src="images/mouse-revised.png" alt="mouse user diagram" />
+
+        <h3>Keyboard User Revised</h3>
+        <img src="images/keyboard-revised.png" alt="keyboard user diagram" />
+      </div>
+
+      <div class="revised-component">
+
+        <h2>Revised Component</h2>
+
+        <p>
+          Based on my above state diagrams, I have chosen to modify the Apple
+          Spotlight Settings as seen below.
+
+          <ul>
+            <li>New hover state so the user knows when it is over an element</li>
+            <li>While not clear, space would now act the same as a mouse click for accessibility</li>
+          </ul>
+        </p>
+
+        <h3>Default</h3>
+        <img src="images/default.png" alt="mouse user diagram" />
+
+        <h3>Hover</h3>
+        <img src="images/hover.png" alt="mouse user diagram" />
+
+        <h3>Clicked</h3>
+        <img src="images/clicked.png" alt="mouse user diagram" />
+      </div>
+    </div>
+  </body>
+</html>
